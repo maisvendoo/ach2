@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Config>
+	<Device>
+		<Order>1</Order>
+
+		<MainShaftDelay>300.0</MainShaftDelay>
+		<ReversShaftDelay>300.0</ReversShaftDelay>			
+
+	</Device>
+
+
+		<Pos>
+			<Number>0</Number>
+			<ShaftFreq>750</ShaftFreq>
+		</Pos>
+
+		<Pos>
+			<Number>1</Number>
+			<ShaftFreq>750</ShaftFreq>
+		</Pos>
+
+		<Pos>
+			<Number>2</Number>
+			<ShaftFreq>916</ShaftFreq>
+		</Pos>	
+
+		<Pos>
+			<Number>3</Number>
+			<ShaftFreq>916</ShaftFreq>
+		</Pos>
+
+		<Pos>
+			<Number>4</Number>
+			<ShaftFreq>1008</ShaftFreq>
+		</Pos>
+
+		<Pos>
+			<Number>5</Number>
+			<ShaftFreq>1100</ShaftFreq>
+		</Pos>
+
+		<Pos>
+			<Number>6</Number>
+			<ShaftFreq>1238</ShaftFreq>
+		</Pos>
+
+		<Pos>
+			<Number>7</Number>
+			<ShaftFreq>1420</ShaftFreq>
+		</Pos>
+
+		<Pos>
+			<Number>8</Number>
+			<ShaftFreq>1560</ShaftFreq>
+		</Pos>
+
+		
+
+
+</Config>

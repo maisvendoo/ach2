@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Config>
+        <Vehicle>
+                <EmptyMass>59</EmptyMass>
+                <PayloadMass>0</PayloadMass>
+                <FuelCapacity>1500</FuelCapacity>
+                <FuelLevel>1.0</FuelLevel>
+                <Length>25</Length>
+                <WheelDiameter>0.950</WheelDiameter>
+                <MainResist>loco-resist</MainResist>
+                <NumAxis>4</NumAxis>            
+                <DegreesOfFreedom>7</DegreesOfFreedom>
+                <WheelInertia>2.0</WheelInertia>
+		<SoundDir>Ach2</SoundDir>
+
+                <ReductorCoeff>3.12</ReductorCoeff>
+
+                <ExtModelName>Ach2/Ach2.osgt</ExtModelName>
+                <ModelShift>0.0 0.0 0.312</ModelShift>            
+                
+        	<CabineModel>Ach2/Ach2-cabview.osgt</CabineModel>
+                <CabineShift>0.0 0.0005 0.312</CabineShift>         
+
+                <BrakeCraneModule>krm395</BrakeCraneModule>
+                <BrakeCraneConfig>krm395</BrakeCraneConfig>
+
+                <LocoCraneModule>kvt254</LocoCraneModule>
+                <LocoCraneConfig>kvt254</LocoCraneConfig>
+
+                <BrakeMechModule>carbrakes-mech</BrakeMechModule>
+                <BrakeMechConfig>tep70bs-mech</BrakeMechConfig>
+
+                <AirDistModule>vr242</AirDistModule>
+                <AirDistConfig>vr242</AirDistConfig>
+
+                <DriverPos>0.7 10.4 2.9</DriverPos>                
+	</Vehicle>
+</Config>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Config>
+	<Common>
+		<CouplingModule>ef-coupling</CouplingModule>
+		<CabineInVehicle>0</CabineInVehicle>
+
+		<!-- Зарядное давление, МПа -->
+		<ChargingPressure>0.52</ChargingPressure>
+		<!-- Поезд без воздуха (1 - без воздуха, 0 - полностью заряженный) -->
+		<NoAir>0</NoAir>
+
+		<Title>АЧ-2</Title>
+		<Description>Автомотриса АЧ2 - самоходный моторный вагон с двигателем внутреннего сгорания.
+
+АЧ2 (Автомотриса Чехословацкого производства, тип 2) — автомотриса, производившаяся чехословацким заводом Vagonka Studenka (Вагонка Студенка) с 1984 по 1990 год для нужд железных дорог СССР.
+
+Совместно с автомотрисами выпускались конструктивно унифицированные с ними прицепные вагоны АПЧ2 по два на каждую мотрису, позволяющие формировать дизель-поезда.</Description>
+	</Common>
+	<Vehicle>
+		<Module>ach2</Module>
+		<ModuleConfig>Ach2</ModuleConfig>
+		<Count>1</Count>
+		<PayloadCoeff>1</PayloadCoeff>
+	</Vehicle>
+	
+</Config>
