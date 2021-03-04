@@ -12,11 +12,15 @@ public:
 
     ACH2(QObject *parent = Q_NULLPTR);
 
-    ~ACH2();
+    ~ACH2() override;
 
 private:
 
+    void initialization() override;
 
+    void stepSignalsOutput(double t, double dt);
+
+    void step(double t, double dt) override;
 };
 
 #endif // ACH2

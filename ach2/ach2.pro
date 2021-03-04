@@ -16,6 +16,5 @@ LIBS += -L$$(RRS_DEV_ROOT)/bin -lfilesystem
 INCLUDEPATH += ./include
 INCLUDEPATH += $$(RRS_DEV_ROOT)/sdk/include
 
-HEADERS += $$files(./include/*.h) \
-    include/ach2-signals.h
+HEADERS += $$files(./include/*.h)
 SOURCES += $$files(./src/*.cpp)

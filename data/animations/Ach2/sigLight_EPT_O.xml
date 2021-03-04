@@ -3,7 +3,7 @@
 	<MaterialAnimation>
 		<SignalID>37</SignalID>
 		<Duration>10.0</Duration>
-		<EmissionColor>1.0 1.0 1.0</EmissionColor>		
+		<EmissionColor>0.0 1.0 0.0</EmissionColor>		
 	</MaterialAnimation>
 
 	<KeyPoint>
