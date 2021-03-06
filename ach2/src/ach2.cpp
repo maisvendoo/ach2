@@ -29,6 +29,9 @@ void ACH2::initialization()
 //------------------------------------------------------------------------------
 void ACH2::step(double t, double dt)
 {
+    // Работа цепей управления
+    stepControlCircuit(t, dt);
+
     // Вывод сигналов в кабину и внешнюю модель
     stepSignalsOutput(t, dt);
 }

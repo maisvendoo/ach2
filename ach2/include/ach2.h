@@ -3,6 +3,8 @@
 
 #include	"vehicle-api.h"
 
+#include    "battery.h"
+
 //------------------------------------------------------------------------------
 //
 //------------------------------------------------------------------------------
@@ -16,7 +18,15 @@ public:
 
 private:
 
+    /// Аккумуляторная батарея
+    Battery *battery;
+
+    /// Инициализация цепей управления
+    void initControlCircuit();
+
     void initialization() override;
+
+    void stepControlCircuit(double t, double dt);
 
     void stepSignalsOutput(double t, double dt);
 
