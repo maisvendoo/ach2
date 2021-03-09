@@ -3,12 +3,27 @@
 	<AnalogRotation>
 		<SignalID>83</SignalID>
 		<Duration>10.0</Duration>
-		<Axis>0.0 0.0 -1.0</Axis>
+		<Axis>0.0 0.0 -1.0</Axis>		
 	</AnalogRotation>
 
 	<KeyPoint>
 		<Param>-1.0</Param>
-		<Value>-38.0</Value>
+		<Value>-124.0</Value>
+	</KeyPoint>
+
+	<KeyPoint>
+		<Param>-0.75</Param>
+		<Value>-93.0</Value>
+	</KeyPoint>
+
+	<KeyPoint>
+		<Param>-0.5</Param>
+		<Value>-60.0</Value>
+	</KeyPoint>
+
+	<KeyPoint>
+		<Param>-0.25</Param>
+		<Value>-29.0</Value>
 	</KeyPoint>
 
 	<KeyPoint>
@@ -16,10 +31,19 @@
 		<Value>0.0</Value>
 	</KeyPoint>
 
+	<KeyPoint>
+		<Param>0.5</Param>
+		<Value>59.0</Value>
+	</KeyPoint>
+
+	<KeyPoint>
+		<Param>0.25</Param>
+		<Value>28.0</Value>
+	</KeyPoint>
 
 	<KeyPoint>
 		<Param>1.0</Param>
-		<Value>38.0</Value>
+		<Value>122.0</Value>
 	</KeyPoint>
 
 

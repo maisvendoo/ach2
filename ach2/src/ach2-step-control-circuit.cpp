@@ -5,5 +5,5 @@
 //------------------------------------------------------------------------------
 void ACH2::stepControlCircuit(double t, double dt)
 {
-    //battery->step(t, dt);
+    battery->step(t, dt);
 }
