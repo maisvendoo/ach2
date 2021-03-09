@@ -4,6 +4,10 @@
 //
 //------------------------------------------------------------------------------
 ACH2::ACH2(QObject *parent) : Vehicle(parent)
+  , battery(Q_NULLPTR)
+  , Ucc(0.0)
+  , Icc(0.0)
+  , fuel_tank(Q_NULLPTR)
 {
 
 }
@@ -22,6 +26,8 @@ ACH2::~ACH2()
 void ACH2::initialization()
 {
     initControlCircuit();
+
+    initSounds();
 }
 
 //------------------------------------------------------------------------------

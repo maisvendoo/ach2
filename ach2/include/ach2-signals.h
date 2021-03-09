@@ -3,7 +3,11 @@
 
 enum
 {
+    STRELKA_BAT_CURRENT = 83,
+
     STRELKA_TM = 94,
+
+    TUMBLER_COMMON_CONTROL = 103,
 
     WHEEL_1 = 194,
     WHEEL_2 = 195,
