@@ -5,6 +5,8 @@
 
 #include    "battery.h"
 #include    "fuel-tank.h"
+#include    "electric-fuel-pump.h"
+#include    "electric-oil-pump.h"
 
 //------------------------------------------------------------------------------
 //
