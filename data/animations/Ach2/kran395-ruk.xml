@@ -9,37 +9,37 @@
 
 	<KeyPoint>
 		<Param>0.0</Param>
-		<Value>-37.0</Value>
-	</KeyPoint>
-
-	<KeyPoint>
-		<Param>0.167</Param>
 		<Value>0.0</Value>
 	</KeyPoint>
 
 	<KeyPoint>
+		<Param>0.167</Param>
+		<Value>42.0</Value>
+	</KeyPoint>
+
+	<KeyPoint>
 		<Param>0.333</Param>
-		<Value>20.0</Value>
+		<Value>62.0</Value>
 	</KeyPoint>
 
 	<KeyPoint>
 		<Param>0.5</Param>
-		<Value>31.0</Value>
+		<Value>73.0</Value>
 	</KeyPoint>
 
 	<KeyPoint>
 		<Param>0.667</Param>
-		<Value>38.0</Value>
+		<Value>80.0</Value>
 	</KeyPoint>
 
 	<KeyPoint>
 		<Param>0.833</Param>
-		<Value>50.0</Value>
+		<Value>92.0</Value>
 	</KeyPoint>
 
 	<KeyPoint>
 		<Param>1.0</Param>
-		<Value>88.0</Value>
+		<Value>130.0</Value>
 	</KeyPoint>
 
 </Config>
