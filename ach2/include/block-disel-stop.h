@@ -30,11 +30,15 @@ public:
 
     bool getContactState(size_t index) const;
 
+    void setVoltage(double U);
+
 private:
 
     Relay       *stop_relay;
 
     TimeRelay   *stop_time_relay;
+
+    double      U;
 
     void ode_system(const state_vector_t &Y,
                     state_vector_t &dYdt,
