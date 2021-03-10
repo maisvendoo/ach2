@@ -9,6 +9,7 @@
 #include    "electric-oil-pump.h"
 #include    "driver-controller.h"
 #include    "relay.h"
+#include    "block-disel-stop.h"
 
 //------------------------------------------------------------------------------
 //
@@ -44,6 +45,9 @@ private:
     /// Контактор топливного насоса
     Relay   *fuel_pump_K11;
 
+    /// Блок остановки дизеля А13
+    BlockDiselStop  *disel_stop_A13;
+
     /// АЗВ "Управление"
     Trigger azv_control_F11;
 
@@ -59,6 +63,9 @@ private:
     /// Инициализация топливной системы
     void initFuelSystem();
 
+    /// Инициализация дизеля и обеспечивающего его работу оборудования
+    void initDisel();
+
     /// Инициализация озвучки
     void initSounds();
 
@@ -67,6 +74,9 @@ private:
     void stepControlCircuit(double t, double dt);
 
     void stepFuelSystem(double t, double dt);
+
+    /// Работа дизеля и связанного с ним обрудования
+    void stepDisel(double t, double dt);
 
     void stepSignalsOutput(double t, double dt);
 

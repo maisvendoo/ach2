@@ -11,6 +11,7 @@ ACH2::ACH2(QObject *parent) : Vehicle(parent)
   , fuel_pump(Q_NULLPTR)
   , oil_pump(Q_NULLPTR)
   , fuel_pump_K11(Q_NULLPTR)
+  , disel_stop_A13(Q_NULLPTR)
 {
 
 }
@@ -32,6 +33,8 @@ void ACH2::initialization()
 
     initFuelSystem();
 
+    initDisel();
+
     initSounds();
 }
 
@@ -45,6 +48,9 @@ void ACH2::step(double t, double dt)
 
     // Работа топливной системы
     stepFuelSystem(t, dt);
+
+    // Работа дизеля
+    stepDisel(t, dt);
 
     // Вывод сигналов в кабину и внешнюю модель
     stepSignalsOutput(t, dt);
