@@ -8,6 +8,9 @@ ACH2::ACH2(QObject *parent) : Vehicle(parent)
   , Ucc(0.0)
   , Icc(0.0)
   , fuel_tank(Q_NULLPTR)
+  , fuel_pump(Q_NULLPTR)
+  , oil_pump(Q_NULLPTR)
+  , fuel_pump_K11(Q_NULLPTR)
 {
 
 }
@@ -27,6 +30,8 @@ void ACH2::initialization()
 {
     initControlCircuit();
 
+    initFuelSystem();
+
     initSounds();
 }
 
@@ -37,6 +42,9 @@ void ACH2::step(double t, double dt)
 {
     // Работа цепей управления
     stepControlCircuit(t, dt);
+
+    // Работа топливной системы
+    stepFuelSystem(t, dt);
 
     // Вывод сигналов в кабину и внешнюю модель
     stepSignalsOutput(t, dt);

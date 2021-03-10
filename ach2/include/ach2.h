@@ -7,6 +7,8 @@
 #include    "fuel-tank.h"
 #include    "electric-fuel-pump.h"
 #include    "electric-oil-pump.h"
+#include    "driver-controller.h"
+#include    "relay.h"
 
 //------------------------------------------------------------------------------
 //
@@ -33,11 +35,29 @@ private:
     /// Топливный бак
     FuelTank    *fuel_tank;
 
+    /// Топливный насос
+    ElectricFuelPump *fuel_pump;
+
+    /// Маслопрокачивающий насос
+    ElectricOilPump *oil_pump;
+
+    /// Контактор топливного насоса
+    Relay   *fuel_pump_K11;
+
     /// АЗВ "Управление"
-    Trigger azv_control;
+    Trigger azv_control_F11;
+
+    /// АЗВ "Топливный насос"
+    Trigger azv_fuel_pump_F12;
+
+    /// Кнопка "Топливный насос"
+    Trigger button_fuel_pump_S18;
 
     /// Инициализация цепей управления
     void initControlCircuit();
+
+    /// Инициализация топливной системы
+    void initFuelSystem();
 
     /// Инициализация озвучки
     void initSounds();
@@ -45,6 +65,8 @@ private:
     void initialization() override;
 
     void stepControlCircuit(double t, double dt);
+
+    void stepFuelSystem(double t, double dt);
 
     void stepSignalsOutput(double t, double dt);
 
