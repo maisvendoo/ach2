@@ -12,6 +12,8 @@ void ACH2::stepSignalsOutput(double t, double dt)
 
     analogSignal[BUTTON_FUEL_PUMP] = static_cast<float>(button_fuel_pump_S18.getState());
 
+    //analogSignal[SIGLIGHT_FUEL_PRESS_1ACH2] = static_cast<float>(hs_n(fuel_pump->getFuelPressure() - 0.14));
+
     analogSignal[STRELKA_BAT_CURRENT] = static_cast<float>(battery->getCargeCurrent() / 100.0);
 
     analogSignal[TUMBLER_COMMON_CONTROL] = static_cast<float>(azv_control_F11.getState());

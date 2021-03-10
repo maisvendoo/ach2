@@ -5,6 +5,8 @@ enum
 {
     BUTTON_FUEL_PUMP = 26,
 
+    SIGLIGHT_FUEL_PRESS_1ACH2 = 53,
+
     STRELKA_BAT_CURRENT = 83,
 
     STRELKA_TM = 94,
