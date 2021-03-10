@@ -78,6 +78,8 @@ void ElectricOilPump::ode_system(const state_vector_t &Y,
                                  state_vector_t &dYdt,
                                  double t)
 {
+    Q_UNUSED(t)
+
     dYdt[0] = (cF * Ia - kc * Y[0]) / J;
 }
 
